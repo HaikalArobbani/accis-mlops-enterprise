@@ -1,0 +1,72 @@
+{
+  "metrics": [
+    {
+      "id": "15e89f895b482f9b84ba7274ed18a106",
+      "metric_name": "DriftedColumnsCount(drift_share=0.5)",
+      "config": {
+        "type": "evidently:metric_v2:DriftedColumnsCount",
+        "drift_share": 0.5
+      },
+      "value": {
+        "count": 3.0,
+        "share": 0.6
+      }
+    },
+    {
+      "id": "dd85504b971e374efb61d934de593ad6",
+      "metric_name": "ValueDrift(column=djo_debit,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "djo_debit",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.3948717283854489
+    },
+    {
+      "id": "d3992cb4093a574f4e4c820cfee70ce2",
+      "metric_name": "ValueDrift(column=log_amt,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "log_amt",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.8251282862195808
+    },
+    {
+      "id": "eb148b06511afaed2b49f52dcee85d43",
+      "metric_name": "ValueDrift(column=acc_id,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "acc_id",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.22241628005050923
+    },
+    {
+      "id": "5be25172d7443dce3c3c784b5736656b",
+      "metric_name": "ValueDrift(column=dow,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "dow",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.04569312332654539
+    },
+    {
+      "id": "65212ed2e4d615234ac4f7d27c3dfff2",
+      "metric_name": "ValueDrift(column=of_id,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "of_id",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.009793414780809582
+    }
+  ],
+  "tests": []
+}

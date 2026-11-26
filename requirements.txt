@@ -1,0 +1,11 @@
+pandas<3.0
+numpy
+pyarrow
+scikit-learn
+mlflow
+evidently
+fastapi
+uvicorn
+pydantic
+pytest
+httpx
